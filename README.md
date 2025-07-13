@@ -44,8 +44,7 @@ Voir le schéma complet dans `/docs/architecture`.
 ---
 
 ## 🖥️ Interface Utilisateur
-
-- Page d'accueil : `/docs/home.jpg`
+- ![Page d'accueil](docs/home.jpg)
 - Résultat fake news : `/docs/fake.jpg`
 - Résultat réel : `/docs/real.jpg`
 - Explication XAI :
@@ -82,8 +81,12 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 ---
-
-### 3️⃣ Lancer le serveur FastAPI
+### 3️⃣ Télécharger le modèle avec DVC
+Il faut avoir un fichier dvc.json qui n'est pas dans le repository, puis : 
+```bash
+dvc pull
+```
+### 4️⃣ Lancer le serveur FastAPI
 
 ```bash
 uvicorn app:app --reload
@@ -94,7 +97,7 @@ uvicorn app:app --reload
 
 ---
 
-### 4️⃣ Installer et lancer le frontend
+### 5️⃣ Installer et lancer le frontend
 ```bash
 cd ../frontend
 npm install
