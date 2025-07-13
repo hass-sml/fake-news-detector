@@ -1,31 +1,45 @@
 ## 📁 Structure du Projet
 
-.
 ├── 📁 backend/
 │   ├── 📁 __pycache__/
+│   ├── 📁 .dvc/
+│   │   ├── 📁 cache/
+│   │   ├── 📁 tmp/
+│   │   ├── 📄 .gitignore
+│   │   ├── 📄 config
 │   ├── 📁 .venv/
-│   ├── 📁 bert-news-model/
-│   │   ├── 📄 config.json
-│   │   ├── 📄 model.safetensors
-│   │   ├── 📄 optimizer.pt
-│   │   ├── 📄 rng_state.pth
-│   │   ├── 📄 scaler.pt
-│   │   ├── 📄 scheduler.pt
-│   │   ├── 📄 special_tokens_map.json
-│   │   ├── 📄 tokenizer_config.json
-│   │   ├── 📄 tokenizer.json
-│   │   ├── 📄 trainer_state.json
-│   │   ├── 📄 training_args.bin
-│   │   ├── 📄 vocab.txt
+│   ├── 📁 models/
+│   │   ├── 📁 bert-news-model/
+│   │   │   ├── 📄 config.json
+│   │   │   ├── 📄 model.safetensors
+│   │   │   ├── 📄 optimizer.pt
+│   │   │   ├── 📄 rng_state.pth
+│   │   │   ├── 📄 scaler.pt
+│   │   │   ├── 📄 scheduler.pt
+│   │   │   ├── 📄 special_tokens_map.json
+│   │   │   ├── 📄 tokenizer_config.json
+│   │   │   ├── 📄 tokenizer.json
+│   │   │   ├── 📄 trainer_state.json
+│   │   │   ├── 📄 training_args.bin
+│   │   │   ├── 📄 vocab.txt
+│   │   ├── 📄 bert-news-model.dvc
 │   ├── 📁 utils/
 │   │   ├── 📁 __pycache__/
 │   │   ├── 📄 preprocess.py
+│   ├── 📄 .dvcignore
+│   ├── 📄 .gitignore
+│   ├── 📄 dvc.json
 │   ├── 📄 app.py
 │   ├── 📄 model.py
 │   ├── 📄 requirements.txt
 ├── 📁 docs/
 │   ├── 📄 App structure.png
 │   ├── 📄 architecture
+│   ├── 📄 attention.jpg
+│   ├── 📄 fake.jpg
+│   ├── 📄 home.jpg
+│   ├── 📄 real.jpg
+│   ├── 📄 xai.jpg
 ├── 📁 figures/
 │   ├── 📄 train & valid loss bert.png
 ├── 📁 frontend/
@@ -48,4 +62,5 @@
 │   ├── 📄 tsconfig.json
 │   ├── 📄 tsconfig.node.json
 │   ├── 📄 vite.config.ts
+├── 📄 .gitignore
 ├── 📄 README.md
