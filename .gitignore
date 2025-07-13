@@ -1,0 +1,4 @@
+/backend/bert-news-model/
+**/__pycache__/
+/frontend/node_modules/
+/backend/.venv/**

@@ -1,0 +1,51 @@
+## 📁 Structure du Projet
+
+.
+├── 📁 backend/
+│   ├── 📁 __pycache__/
+│   ├── 📁 .venv/
+│   ├── 📁 bert-news-model/
+│   │   ├── 📄 config.json
+│   │   ├── 📄 model.safetensors
+│   │   ├── 📄 optimizer.pt
+│   │   ├── 📄 rng_state.pth
+│   │   ├── 📄 scaler.pt
+│   │   ├── 📄 scheduler.pt
+│   │   ├── 📄 special_tokens_map.json
+│   │   ├── 📄 tokenizer_config.json
+│   │   ├── 📄 tokenizer.json
+│   │   ├── 📄 trainer_state.json
+│   │   ├── 📄 training_args.bin
+│   │   ├── 📄 vocab.txt
+│   ├── 📁 utils/
+│   │   ├── 📁 __pycache__/
+│   │   ├── 📄 preprocess.py
+│   ├── 📄 app.py
+│   ├── 📄 model.py
+│   ├── 📄 requirements.txt
+├── 📁 docs/
+│   ├── 📄 App structure.png
+│   ├── 📄 architecture
+├── 📁 figures/
+│   ├── 📄 train & valid loss bert.png
+├── 📁 frontend/
+│   ├── 📁 node_modules/
+│   ├── 📁 src/
+│   │   ├── 📄 api.ts
+│   │   ├── 📄 App.tsx
+│   │   ├── 📄 AttentionHeatmap.tsx
+│   │   ├── 📄 index.css
+│   │   ├── 📄 main.tsx
+│   │   ├── 📄 vite-env.d.ts
+│   ├── 📄 .gitignore
+│   ├── 📄 eslint.config.js
+│   ├── 📄 index.html
+│   ├── 📄 package.json
+│   ├── 📄 package-lock.json
+│   ├── 📄 postcss.config.js
+│   ├── 📄 tailwind.config.js
+│   ├── 📄 tsconfig.app.json
+│   ├── 📄 tsconfig.json
+│   ├── 📄 tsconfig.node.json
+│   ├── 📄 vite.config.ts
+├── 📄 README.md
