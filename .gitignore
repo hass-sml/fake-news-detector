@@ -1,4 +1,6 @@
-/backend/bert-news-model/
+/backend/models/bert-news-model/
+/backend/dvc.json
 **/__pycache__/
 /frontend/node_modules/
 /backend/.venv/**
+/backend/.dvc
