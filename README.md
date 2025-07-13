@@ -57,28 +57,36 @@ Voir le schéma complet dans `/docs/architecture.png`.
 ## ⚙️ Installation & Lancement
 
 ### 1️⃣ Cloner le projet
-
+```bash
 git clone https://github.com/hass-sml/fake-news-detector.git
 cd fake-news-detector
-
+```
 ---
 
 ### 2️⃣ Installer le backend
-
+```bash
 cd backend
 python -m venv .venv
+```
 # Linux / Mac
+```bash
 source .venv/bin/activate
+```
 # Windows
+```bash
 .venv\Scripts\activate
+```
 
+```code
 pip install -r requirements.txt
-
+```
 ---
 
 ### 3️⃣ Lancer le serveur FastAPI
 
+```bash
 uvicorn app:app --reload
+``` 
 
 - API: http://localhost:8000
 - Swagger: http://localhost:8000/docs
@@ -86,29 +94,30 @@ uvicorn app:app --reload
 ---
 
 ### 4️⃣ Installer et lancer le frontend
-
+```bash
 cd ../frontend
 npm install
 npm run dev
-
+```
 - Frontend: http://localhost:5173
 
 ---
 
 ## 📮 Exemple d’appel API
-
+```curl
 curl -X POST "http://localhost:8000/predict" \
   -H "Content-Type: application/json" \
   -d '{"text": "Moroccan King Hassan II is expanding renewable energy to Tanzania in 2030."}'
-
+```
 Réponse attendue :
+```
 {
   "prediction": "fake",
   "probability": 0.98,
   "tokens": ["Moroccan", "King", "Hassan", "II", ...],
   "scores": [0.1, 0.3, -0.5, ...]
 }
-
+```
 ---
 
 ## 🎓 Fonctionnalités XAI
