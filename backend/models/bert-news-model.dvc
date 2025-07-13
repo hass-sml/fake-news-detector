@@ -1,0 +1,6 @@
+outs:
+- md5: 05306867e7b45bbc86366e7989fb1333.dir
+  size: 804532585
+  nfiles: 12
+  hash: md5
+  path: bert-news-model
