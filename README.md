@@ -68,16 +68,17 @@ cd fake-news-detector
 cd backend
 python -m venv .venv
 ```
-# Linux / Mac
+➡️ Activer l’environnement virtuel :
+- Linux / Mac :
 ```bash
 source .venv/bin/activate
 ```
-# Windows
+- Windows :
 ```bash
 .venv\Scripts\activate
 ```
-
-```code
+➡️ Installer les dépendances :
+```bash
 pip install -r requirements.txt
 ```
 ---
