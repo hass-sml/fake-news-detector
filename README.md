@@ -39,7 +39,7 @@ Voici l’architecture générale de l’application :
 
 ## 🏗️ Schéma d’Architecture
 
-Voir le schéma complet dans `/docs/architecture.png`.
+Voir le schéma complet dans `/docs/architecture`.
 
 ---
 
