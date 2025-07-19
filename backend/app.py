@@ -11,7 +11,7 @@ app = FastAPI()
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # or ["*"] to allow all (less secure!)
+    allow_origins=["http://localhost:5173"],  # or ["*"] to allow all
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -38,8 +38,8 @@ async def predict_news(news: NewsRequest):
     # Pair and filter
     filtered = [(t, s) for t, s in zip(tokens, scores) if t.strip()]
     tokens, scores = zip(*filtered) if filtered else ([], [])
+    
 
-    print(scores)
 
     return {
     "prediction": "real" if prediction == 1 else "fake",

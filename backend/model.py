@@ -7,7 +7,7 @@ import shap
 # import numpy as np
 
 # === Load the tokenizer & model ===
-MODEL_NAME = "./bert-news-model" 
+MODEL_NAME = "./models/bert-news-model" 
 
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 model = AutoModelForSequenceClassification.from_pretrained(MODEL_NAME)
@@ -41,6 +41,7 @@ def explain(text: str):
     
     explainer = shap.Explainer(f, shap.maskers.Text(tokenizer))
     shap_values = explainer([text])
+    
     
     # Return raw parts
     tokens = shap_values.data[0]

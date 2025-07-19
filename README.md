@@ -44,7 +44,7 @@ Voir le schéma complet dans `/docs/architecture`.
 ---
 
 ## 🖥️ Interface Utilisateur
- ![Page d'accueil](docs/home.jpg)
+![Page d'accueil](docs/home.jpg)
 - Page Home : `/docs/home.jpg`
 - Résultat fake news : `/docs/fake.jpg`
 - Résultat réel : `/docs/real.jpg`
